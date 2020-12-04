@@ -7,5 +7,5 @@
 - [File Manager API in Deno](https://github.com/jgteam/bell--file-manager--deno)
 
 ## Vorbereitung
-Benenne `mysql.conf.SAMPLE.php` zu `mysql.conf.php` um und ersetze die Platzhalter-Werte mit deinen eigenen.
+Benenne `config.SAMPLE.php` zu `config.php` um und ersetze die Platzhalter-Werte mit deinen eigenen.
 Beachte die Tabellenstruktur, welche in dieser Datei beschrieben ist.
