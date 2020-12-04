@@ -1,0 +1,11 @@
+DirectoryIndex form.html
+
+RewriteEngine On
+
+RedirectMatch 403 ^/scripts/.*$
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^download/(.*)$ ./scripts/down.php?fileid=$1
+RewriteRule upload ./scripts/up.php
