@@ -8,7 +8,7 @@
 
 ## Vorbereitung
 Benenne `config.SAMPLE.php` zu `config.php` um und ersetze die Platzhalter-Werte mit deinen eigenen.
-Beachte die Tabellenstruktur, welche in dieser Datei beschrieben ist.
+Beachte die Tabellenstruktur, welche in dieser Datei beschrieben wird.
 
 ## Benutzung
 
