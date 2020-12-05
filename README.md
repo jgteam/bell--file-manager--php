@@ -10,6 +10,8 @@
 Benenne `config.SAMPLE.php` zu `config.php` um und ersetze die Platzhalter-Werte mit deinen eigenen.
 Beachte die Tabellenstruktur, welche in dieser Datei beschrieben ist.
 
+## Benutzung
+
 ### API
 
 💡 Die API-Schnittstelle ist in alles Softwarestacks identisch aufgebaut.
