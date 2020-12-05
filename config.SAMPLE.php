@@ -13,7 +13,7 @@ define("PASSWORD", "password");
 define("DATABASE", "dbname");
 
 // eg: "https://example.com/"
-define("ROOTURL", "http:://localhost/filemgr/");
+define("ROOTURL", "http://localhost/filemgr/");
 
 $con = new mysqli(HOST, USER, PASSWORD, DATABASE);
 if ($con->connect_errno)
