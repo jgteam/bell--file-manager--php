@@ -15,6 +15,10 @@ Es handelt sich hier um eine **XAMP**-Stack Applikation.
 - M: MariaDB (MySQL, etc)
 - P: PHP
 
+Weitere Software, welche zum Einsatz kommt:
+
+- jQuery
+
 ## Vorbereitung
 Benenne `config.SAMPLE.php` zu `config.php` um und ersetze die Platzhalter-Werte mit deinen eigenen.
 Beachte die Tabellenstruktur, welche in dieser Datei beschrieben wird.
