@@ -6,6 +6,15 @@
 - [File Manager API in Nodejs](https://github.com/jgteam/bell--file-manager--nodejs)
 - [File Manager API in Deno](https://github.com/jgteam/bell--file-manager--deno)
 
+## Stack
+
+Es handelt sich hier um eine **XAMP**-Stack Applikation.
+
+- X: Crossplatform (Windows, Linux, macOS, etc)
+- A: Apache2
+- M: MariaDB (MySQL, etc)
+- P: PHP
+
 ## Vorbereitung
 Benenne `config.SAMPLE.php` zu `config.php` um und ersetze die Platzhalter-Werte mit deinen eigenen.
 Beachte die Tabellenstruktur, welche in dieser Datei beschrieben wird.
