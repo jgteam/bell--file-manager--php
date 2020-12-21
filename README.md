@@ -11,9 +11,9 @@
 Es handelt sich hier um eine **XAMP**-Stack Applikation.
 
 - X: Crossplatform (Windows, Linux, macOS, etc)
-- A: Apache2
+- A: Apache2 (PHP aktiviert)
 - M: MariaDB (MySQL, etc)
-- P: PHP
+- P: PHP (MySQLi aktiviert)
 
 Weitere Software, welche zum Einsatz kommt:
 
@@ -22,6 +22,8 @@ Weitere Software, welche zum Einsatz kommt:
 ## Vorbereitung
 Benenne `config.SAMPLE.php` zu `config.php` um und ersetze die Platzhalter-Werte mit deinen eigenen.
 Beachte die Tabellenstruktur, welche in dieser Datei beschrieben wird.
+
+Apache2/PHP Konfiguration: Der Server brauch Lese- und Schreib-Berechtigung für den Upload-Ordner und muss Dateiuploads zulassen.
 
 ## Benutzung
 
