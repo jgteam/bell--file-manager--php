@@ -2,7 +2,7 @@ DirectoryIndex form.html
 
 RewriteEngine On
 
-RedirectMatch 403 ^/scripts/.*$
+# RedirectMatch 403 ^/scripts/.*$
 
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
