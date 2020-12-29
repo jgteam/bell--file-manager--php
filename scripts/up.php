@@ -5,7 +5,7 @@ require_once("./../functions.php");
 
 $file = (isset($_FILES['file'])) ? $_FILES['file'] : null;
 
-if($file === null) {
+if($file === null || $_FILES['file']['size'] == 0) {
     // Datei wurde nicht übergeben
 
     // Error-Antwort erstellen
