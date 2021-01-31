@@ -21,6 +21,48 @@ function getFileDownloadURL($fileid) {
     return ROOTURL . "download/" . $fileid;
 }
 
+// Startet eine PHP-Session, sofern noch keine aktiv ist
+function startSession() {
+    if(session_status() != PHP_SESSION_ACTIVE) session_start();
+}
+
+// Speichert Upload-Information im Verlauf in der PHP_SESSION
+function pushToUploadHistory($response) {
+    startSession();
+
+    if(!isset($_SESSION['uploads'])) $_SESSION['uploads'] = [];
+    $_SESSION['uploads'][] = $response;
+
+}
+
+// Gibt den Upload-Verlauf zurück
+function getUploadHistory() {
+    startSession();
+
+    if(!isset($_SESSION['uploads'])) return null;
+    return $_SESSION['uploads'];
+
+}
+
+// Speichert Download-Information im Verlauf in der PHP_SESSION
+function pushToDownloadHistory($fileid) {
+    startSession();
+
+    if(!isset($_SESSION['downloads'])) $_SESSION['downloads'] = [];
+    $_SESSION['downloads'][] = $fileid;
+
+}
+
+// Gibt den Download-Verlauf zurück
+function getDownloadHistory() {
+    startSession();
+
+    if(!isset($_SESSION['downloads'])) return null;
+    return $_SESSION['downloads'];
+
+}
+
+
 // https://stackoverflow.com/a/15875555
 // Generiert eine v4 UUID
 function v4($data)

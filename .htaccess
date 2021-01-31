@@ -9,3 +9,6 @@ RewriteCond %{SCRIPT_FILENAME} !-f
 
 RewriteRule ^download/(.*)$ ./scripts/down.php?fileid=$1
 RewriteRule upload ./scripts/up.php
+RewriteRule getDownloadHistory ./scripts/down-hist.php
+RewriteRule getUploadHistory ./scripts/up-hist.php
+RewriteRule history ./hist.html

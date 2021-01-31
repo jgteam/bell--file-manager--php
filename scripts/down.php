@@ -56,6 +56,9 @@ if (mysqli_num_rows($res) > 0) {
     } else {
         // Datei existiert
 
+        // In der History speichern
+        pushToDownloadHistory($fileid);
+
         // Dateidownload-Antwort erstellen
         http_response_code(200);
         header("Content-Type: plain/text");

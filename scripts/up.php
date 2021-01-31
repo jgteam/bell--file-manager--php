@@ -35,8 +35,17 @@ $sql = "INSERT INTO files_php (id, filename) VALUES ('" . mysqli_real_escape_str
 mysqli_query($con, $sql);
 
 // Erfolgs-Antwort erstellen
-jsonResponse(200, [
+$response = [
     'status' => true,
+    'download' => getFileDownloadURL($fileid),
     'filename' => $filename,
-    'download' => getFileDownloadURL($fileid)
-]);
+    // Weitere Eigenschaften
+    'filetype' => $file['type'],
+    'filesize' => $file['size']
+];
+
+// In der History speichern
+pushToUploadHistory($response);
+
+// Antwort senden
+jsonResponse(200, $response);
