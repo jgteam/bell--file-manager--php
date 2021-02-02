@@ -41,7 +41,8 @@ $response = [
     'filename' => $filename,
     // Weitere Eigenschaften
     'filetype' => $file['type'],
-    'filesize' => $file['size']
+    'filesize' => $file['size'],
+    'md5' => md5_file($uploadfile)
 ];
 
 // In der History speichern
